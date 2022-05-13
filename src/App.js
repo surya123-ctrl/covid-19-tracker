@@ -1,5 +1,6 @@
 import { FormControl, MenuItem, Select } from '@mui/material';
 import React, { useState, useEffect } from 'react';
+import InfoBox from './InfoBox';
 import './App.css';
 function App() {
   const [countries, setCountries] = useState([]);
@@ -39,10 +40,9 @@ function App() {
       </div>
 
       <div className='app-stats'>
-        {/* infobox */}
-        {/* infobox */}
-        {/* infobox */}
-
+        <InfoBox title='coronavirus cases' cases={2334} total={1000} />
+        <InfoBox title='recovered' cases={89480} total={2000} />
+        <InfoBox title='deaths' cases={4397874} total={3000} />
       </div>
       {/* table */}
       {/* graph */}
