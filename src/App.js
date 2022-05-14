@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import InfoBox from './InfoBox';
 import Map from './Map';
 import Table from './Table';
+import LineGraph from './LineGraph';
 import { Card } from '@mui/material'
 import './App.css';
 import { sortData } from './util';
@@ -78,6 +79,7 @@ function App() {
           <h3>Live Cases By Country</h3>
           <Table countries={tableData} />
           <h3>Worldwide New Cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
