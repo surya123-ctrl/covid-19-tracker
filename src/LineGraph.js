@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { Line } from 'react-chartjs-2'
-import numeral from 'numeral';
-// "https://disease.sh/v3/covid-19/historical/all?lastdays=120"
-
+import React, { useState, useEffect } from "react";
+import { Line } from "react-chartjs-2";
+import numeral from "numeral";
 const options = {
     legend: {
         display: false,
@@ -75,6 +73,7 @@ function LineGraph({ casesType }) {
                     let chartData = buildChartData(data, casesType);
                     setData(chartData);
                     console.log(chartData);
+                    // buildChart(chartData);
                 });
         };
 
